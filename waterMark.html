@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>waterMark水印</title>
+	</head>
+	<style>
+		input,
+		select {
+			width: 150px;
+		}
+		.show img{
+			max-height: 800px;
+			}
+	</style>
+	<body>
+		<p>
+			<label>选择颜色:</label>
+			<select class="selectCo">
+	            <option value="#ff0000" selected="selected">Red</option>
+	            <option value="#00ff00">Green</option>
+	            <option value="#0000ff">Black</option>
+	            <option value="#ffffff">White</option>
+	        </select>
+		</p>
+		<p>
+			<label>H5拾色器:</label><input placeholder="您的浏览器暂不支持拾色器" id="colorPicker">
+		</p>
+		<p>
+			<label>字体大小:</label>
+			<select class="selectSi">
+	        	<option value="40px" selected="selected">40px</option>
+	        	<option value="60px">60px</option>
+	        	<option value="80px">80px</option>
+	        	<option value="100px">100px</option>
+	        	<option value="120px">120px</option>
+	        	<option value="130px">130px</option>
+	        	<option value="150px">150px</option>
+	        </select>
+		</p>
+		<p>
+			<label>水印文字:</label>
+			<input type="text" placeholder="添加水印文字" id="shy">
+		</p>
+		<p>
+			<a download id="download">下载图片</a>
+		</p>
+		<input type="file" accept="image/*" id="upload"><br>
+		<div class="show"></div>
+	</body>
+	<script src="js/waterMark.js"></script>
+</html>
